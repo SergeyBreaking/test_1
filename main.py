@@ -38,4 +38,14 @@ class Users(Base):
     car_model = Column(String)
 
 
+class Avto_repair(Base):
+    __tablename__= 'avto_repair'
+    id = Column(Integer, primary_key=True)
+    master_name = Column(String)
+    master_surname = Column(Integer)
+    cars_quantity = Column(Integer)
+    cars_repaired = Column(Integer)
+    salary = Column(Integer)
+
+
 create_all_tables()
